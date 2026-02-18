@@ -7,7 +7,7 @@ import phishing from "../../Assets/Projects/phishing_detector.png";
 import vzoom from "../../Assets/Projects/zoomclone.png";
 import graphrag from "../../Assets/Projects/Graphrag.png";
 import recipe from "../../Assets/Projects/recipe.png";
-import bitsOfCode from "../../Assets/Projects/blog.png";
+import graph_architecture from "../../Assets/Projects/graph_architecture.png";
 
 function Projects() {
   return (
@@ -27,6 +27,15 @@ function Projects() {
               isBlog={false}
               title="GraphRAG (Explainable AI System)"
               description="Designed and implemented a Knowledge Graph–enhanced Retrieval-Augmented Generation (RAG) architecture integrating Neo4j/Kuzu with LLMs to enable structured, context-aware information retrieval. Built graph-based entity-relationship schemas, implemented query routing pipelines, and optimized retrieval latency using modular data preprocessing and semantic embedding workflows. Focused on explainability through traceable response generation and metadata-linked outputs."
+            />
+          </Col>
+
+          <Col md={4} className="project-card">
+            <ProjectCard
+              imgPath={graph_architecture}
+              isBlog={false}
+              title="ExplainMyRecords (Medical Records Explain Chat – AI Healthcare Assistant)"
+              description="Developed an AI-powered conversational system designed to interpret and simplify complex medical records into patient-friendly explanations. Implemented LLM-based contextual understanding with structured document parsing to extract diagnoses, lab results, prescriptions, and clinical notes. Built a secure backend pipeline for processing uploaded medical documents, enabling semantic retrieval and explainable responses while maintaining data privacy considerations. Focused on improving interpretability, accessibility, and user-centric healthcare communication through intelligent NLP-driven automation."
             />
           </Col>
 
