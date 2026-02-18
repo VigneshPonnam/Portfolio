@@ -2,7 +2,7 @@ import React from "react";
 import { Container, Row, Col } from "react-bootstrap";
 import ProjectCard from "./ProjectCards";
 import Particle from "../Particle";
-import agroassist from "../../Assets/Projects/agrpasssist.png";
+import agroassist from "../../Assets/Projects/agroassist.png";
 import phishing from "../../Assets/Projects/phishing_detector.png";
 import vzoom from "../../Assets/Projects/zoomclone.png";
 import graphrag from "../../Assets/Projects/Graphrag.png";
@@ -100,7 +100,9 @@ function Projects() {
               imgPath={cyber}
               isBlog={false}
               title="Cybersecurity – Threat Management (SOC Study & Simulation)"
-              description="Conducted structured analysis of Security Operations Center (SOC) workflows, including threat monitoring, incident detection, and response strategies. Studied network-level intrusion prevention systems, firewall configurations, and cloud security controls aligned with enterprise infrastructure protection." </Col>
+              description="Conducted structured analysis of Security Operations Center (SOC) workflows, including threat monitoring, incident detection, and response strategies. Studied network-level intrusion prevention systems, firewall configurations, and cloud security controls aligned with enterprise infrastructure protection." 
+                />
+                </Col>
         </Row>
       </Container>
     </Container>
