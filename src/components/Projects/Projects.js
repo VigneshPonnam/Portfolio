@@ -97,7 +97,7 @@ function Projects() {
                 
           <Col md={4} className="project-card">
             <ProjectCard
-              imgPath={recipe}
+              imgPath={cyber}
               isBlog={false}
               title="Cybersecurity – Threat Management (SOC Study & Simulation)"
               description="Conducted structured analysis of Security Operations Center (SOC) workflows, including threat monitoring, incident detection, and response strategies. Studied network-level intrusion prevention systems, firewall configurations, and cloud security controls aligned with enterprise infrastructure protection." </Col>
