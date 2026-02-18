@@ -1,126 +1,112 @@
 import React from "react";
 import { Col, Row } from "react-bootstrap";
 
-// ✅ Icons from: src/Assets/TechIcons/ (single folder)
-import Python from "../../Assets/TechIcons/python.svg";
-import PyTorch from "../../Assets/TechIcons/pytorch.svg";
-import TensorFlow from "../../Assets/TechIcons/tensorflow.svg";
-import HuggingFace from "../../Assets/TechIcons/huggingface.svg";
-import Neo4j from "../../Assets/TechIcons/neo4j.svg";
+// AI / ML
+import python from "../../Assets/TechIcons/python.svg";
+import pytorch from "../../Assets/TechIcons/pytorch.svg";
+import tensorflow from "../../Assets/TechIcons/tensorflow.svg";
+import huggingface from "../../Assets/TechIcons/huggingface.svg";
+import yolo from "../../Assets/TechIcons/yolo.svg";
+import mistralai from "../../Assets/TechIcons/mistralai.svg";
+import googlegemini from "../../Assets/TechIcons/googlegemini.svg";
+import kaggle from "../../Assets/TechIcons/kaggle.svg";
 
-import ReactIcon from "../../Assets/TechIcons/react.svg";
-import Flask from "../../Assets/TechIcons/flask.svg";
-import Android from "../../Assets/TechIcons/android.svg";
-import Java from "../../Assets/TechIcons/java.svg";
-import C from "../../Assets/TechIcons/c.svg";
-import Git from "../../Assets/TechIcons/git.svg";
-import GitHub from "../../Assets/TechIcons/github.svg";
+// Software / Full Stack
+import ReactIcon from "../../Assets/TechIcons/React.svg";
+import flask from "../../Assets/TechIcons/flask.svg";
+import android from "../../Assets/TechIcons/android.svg";
+import Java from "../../Assets/TechIcons/Java.svg";
+import c from "../../Assets/TechIcons/c.svg";
+import Javascript from "../../Assets/TechIcons/Javascript.svg";
+import Typescript from "../../Assets/TechIcons/Typescript.svg";
+import Node from "../../Assets/TechIcons/Node.svg";
+import Git from "../../Assets/TechIcons/Git.svg";
+import github from "../../Assets/TechIcons/github.svg";
+import vscode from "../../Assets/TechIcons/vscode.svg";
+import Postman from "../../Assets/TechIcons/Postman.svg";
+import Docker from "../../Assets/TechIcons/Docker.svg";
+import SQL from "../../Assets/TechIcons/SQL.svg";
+import graphql from "../../Assets/TechIcons/graphql.svg";
+import streamlit from "../../Assets/TechIcons/streamlit.svg";
+import gradio from "../../Assets/TechIcons/gradio.svg";
 
-import AWS from "../../Assets/TechIcons/aws.svg";
-import S3 from "../../Assets/TechIcons/s3.svg";
-import RDS from "../../Assets/TechIcons/rds.svg";
-import Redshift from "../../Assets/TechIcons/redshift.svg";
-import GoogleCloud from "../../Assets/TechIcons/googlecloud.svg";
-import MongoDB from "../../Assets/TechIcons/mongodb.svg";
+// Cloud
+import AWS from "../../Assets/TechIcons/AWS.svg";
+import googlecloud from "../../Assets/TechIcons/googlecloud.svg";
+import elasticcloud from "../../Assets/TechIcons/elasticcloud.svg";
+import Mongo from "../../Assets/TechIcons/Mongo.svg";
+import mongodb from "../../Assets/TechIcons/mongodb.svg";
+import neo4j from "../../Assets/TechIcons/neo4j.svg";
 
-import Cisco from "../../Assets/TechIcons/cisco.svg";
-import PaloAlto from "../../Assets/TechIcons/paloalto.svg";
-import Salesforce from "../../Assets/TechIcons/salesforce.svg";
+// Cyber / Networking
+import cisco from "../../Assets/TechIcons/cisco.svg";
+import paloalto from "../../Assets/TechIcons/paloaltonetworks.svg";
+import wireshark from "../../Assets/TechIcons/wireshark.svg";
+import webrtc from "../../Assets/TechIcons/webrtc.svg";
+
+// Others
+import knowledgebase from "../../Assets/TechIcons/knowledgebase.svg";
+import latex from "../../Assets/TechIcons/latex.svg";
+import datasci from "../../Assets/TechIcons/365datascience.svg";
 
 function Techstack() {
+  const skills = [
+    { icon: python, name: "Python" },
+    { icon: pytorch, name: "PyTorch" },
+    { icon: tensorflow, name: "TensorFlow" },
+    { icon: huggingface, name: "Hugging Face" },
+    { icon: yolo, name: "YOLO" },
+    { icon: mistralai, name: "Mistral AI" },
+    { icon: googlegemini, name: "Google Gemini" },
+    { icon: kaggle, name: "Kaggle" },
+
+    { icon: ReactIcon, name: "React.js" },
+    { icon: flask, name: "Flask" },
+    { icon: android, name: "Android" },
+    { icon: Java, name: "Java" },
+    { icon: c, name: "C" },
+    { icon: Javascript, name: "JavaScript" },
+    { icon: Typescript, name: "TypeScript" },
+    { icon: Node, name: "Node.js" },
+    { icon: Git, name: "Git" },
+    { icon: github, name: "GitHub" },
+    { icon: vscode, name: "VS Code" },
+    { icon: Postman, name: "Postman" },
+    { icon: Docker, name: "Docker" },
+    { icon: SQL, name: "SQL" },
+    { icon: graphql, name: "GraphQL" },
+    { icon: streamlit, name: "Streamlit" },
+    { icon: gradio, name: "Gradio" },
+
+    { icon: AWS, name: "AWS" },
+    { icon: googlecloud, name: "Google Cloud" },
+    { icon: elasticcloud, name: "Elastic Cloud" },
+    { icon: Mongo, name: "Mongo" },
+    { icon: mongodb, name: "MongoDB" },
+    { icon: neo4j, name: "Neo4j" },
+
+    { icon: cisco, name: "Cisco" },
+    { icon: paloalto, name: "Palo Alto" },
+    { icon: wireshark, name: "Wireshark" },
+    { icon: webrtc, name: "WebRTC" },
+
+    { icon: knowledgebase, name: "Knowledge Base" },
+    { icon: latex, name: "LaTeX" },
+    { icon: datasci, name: "Data Science" },
+  ];
+
   return (
     <Row style={{ justifyContent: "center", paddingBottom: "50px" }}>
-      {/* AI / ML */}
-      <Col xs={4} md={2} className="tech-icons">
-        <img src={Python} alt="Python" />
-        <div className="tech-icons-text">Python</div>
-      </Col>
-      <Col xs={4} md={2} className="tech-icons">
-        <img src={PyTorch} alt="PyTorch" />
-        <div className="tech-icons-text">PyTorch</div>
-      </Col>
-      <Col xs={4} md={2} className="tech-icons">
-        <img src={TensorFlow} alt="TensorFlow" />
-        <div className="tech-icons-text">TensorFlow</div>
-      </Col>
-      <Col xs={4} md={2} className="tech-icons">
-        <img src={HuggingFace} alt="Hugging Face" />
-        <div className="tech-icons-text">Hugging Face</div>
-      </Col>
-      <Col xs={4} md={2} className="tech-icons">
-        <img src={Neo4j} alt="Neo4j" />
-        <div className="tech-icons-text">Neo4j</div>
-      </Col>
-
-      {/* Software / Full Stack */}
-      <Col xs={4} md={2} className="tech-icons">
-        <img src={ReactIcon} alt="React.js" />
-        <div className="tech-icons-text">React.js</div>
-      </Col>
-      <Col xs={4} md={2} className="tech-icons">
-        <img src={Flask} alt="Flask" />
-        <div className="tech-icons-text">Flask</div>
-      </Col>
-      <Col xs={4} md={2} className="tech-icons">
-        <img src={Android} alt="Android" />
-        <div className="tech-icons-text">Android</div>
-      </Col>
-      <Col xs={4} md={2} className="tech-icons">
-        <img src={Java} alt="Java" />
-        <div className="tech-icons-text">Java</div>
-      </Col>
-      <Col xs={4} md={2} className="tech-icons">
-        <img src={C} alt="C" />
-        <div className="tech-icons-text">C</div>
-      </Col>
-      <Col xs={4} md={2} className="tech-icons">
-        <img src={Git} alt="Git" />
-        <div className="tech-icons-text">Git</div>
-      </Col>
-      <Col xs={4} md={2} className="tech-icons">
-        <img src={GitHub} alt="GitHub" />
-        <div className="tech-icons-text">GitHub</div>
-      </Col>
-
-      {/* Cloud & Data */}
-      <Col xs={4} md={2} className="tech-icons">
-        <img src={AWS} alt="AWS" className="tech-icon-images" />
-        <div className="tech-icons-text">AWS</div>
-      </Col>
-      <Col xs={4} md={2} className="tech-icons">
-        <img src={S3} alt="Amazon S3" className="tech-icon-images" />
-        <div className="tech-icons-text">S3</div>
-      </Col>
-      <Col xs={4} md={2} className="tech-icons">
-        <img src={RDS} alt="Amazon RDS" className="tech-icon-images" />
-        <div className="tech-icons-text">RDS</div>
-      </Col>
-      <Col xs={4} md={2} className="tech-icons">
-        <img src={Redshift} alt="Amazon Redshift" className="tech-icon-images" />
-        <div className="tech-icons-text">Redshift</div>
-      </Col>
-      <Col xs={4} md={2} className="tech-icons">
-        <img src={GoogleCloud} alt="Google Cloud" className="tech-icon-images" />
-        <div className="tech-icons-text">Google Cloud</div>
-      </Col>
-      <Col xs={4} md={2} className="tech-icons">
-        <img src={MongoDB} alt="MongoDB" />
-        <div className="tech-icons-text">MongoDB</div>
-      </Col>
-
-      {/* Cyber / Enterprise */}
-      <Col xs={4} md={2} className="tech-icons">
-        <img src={Cisco} alt="Cisco" />
-        <div className="tech-icons-text">Cisco</div>
-      </Col>
-      <Col xs={4} md={2} className="tech-icons">
-        <img src={PaloAlto} alt="Palo Alto Networks" />
-        <div className="tech-icons-text">Palo Alto</div>
-      </Col>
-      <Col xs={4} md={2} className="tech-icons">
-        <img src={Salesforce} alt="Salesforce" />
-        <div className="tech-icons-text">Salesforce</div>
-      </Col>
+      {skills.map((skill, index) => (
+        <Col key={index} xs={4} md={2} className="tech-icons">
+          <img
+            src={skill.icon}
+            alt={skill.name}
+            className="tech-icon-img"
+          />
+          <div className="tech-icons-text">{skill.name}</div>
+        </Col>
+      ))}
     </Row>
   );
 }

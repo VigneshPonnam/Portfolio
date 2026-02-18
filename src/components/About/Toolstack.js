@@ -1,30 +1,31 @@
 import React from "react";
 import { Col, Row } from "react-bootstrap";
-import macOs from "../../Assets/TechIcons/Apple MacOSX.svg";
-import chrome from "../../Assets/TechIcons/Google Chrome.svg";
-import vsCode from "../../Assets/TechIcons/vscode.svg";
-import intelliJ from "../../Assets/TechIcons/intellij-idea.svg";
+
+import huggingface from "../../Assets/TechIcons/huggingface.svg";
+import github from "../../Assets/TechIcons/github.svg";
+import vscode from "../../Assets/TechIcons/vscode.svg";
+import neo4j from "../../Assets/TechIcons/neo4j.svg";
 
 function Toolstack() {
+  const tools = [
+    { icon: huggingface, name: "Hugging Face" },
+    { icon: github, name: "GitHub" },
+    { icon: vscode, name: "VS Code" },
+    { icon: neo4j, name: "Neo4j" },
+  ];
+
   return (
     <Row style={{ justifyContent: "center", paddingBottom: "50px" }}>
-      <Col xs={4} md={2} className="tech-icons">
-        <img src={macOs} alt="macOs" className="tech-icon-images" />
-        <div className="tech-icons-text">Mac Os</div>
-      </Col>
-      <Col xs={4} md={2} className="tech-icons ">
-        <img src={chrome} alt="Chrome" className="tech-icon-images" />
-        <div className="tech-icons-text">Google Chrome</div>
-      </Col>
-      <Col xs={4} md={2} className="tech-icons ">
-        <img src={vsCode} alt="vsCode" className="tech-icon-images" />
-        <div className="tech-icons-text">Vs Code</div>
-      </Col>
-
-      <Col xs={4} md={2} className="tech-icons ">
-        <img src={intelliJ} alt="go" className="tech-icon-images" />
-        <div className="tech-icons-text">IntelliJ</div>
-      </Col>
+      {tools.map((tool, index) => (
+        <Col key={index} xs={4} md={3} className="tech-icons">
+          <img
+            src={tool.icon}
+            alt={tool.name}
+            className="tech-icon-img"
+          />
+          <div className="tech-icons-text">{tool.name}</div>
+        </Col>
+      ))}
     </Row>
   );
 }
