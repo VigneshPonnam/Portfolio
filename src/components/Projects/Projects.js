@@ -11,6 +11,7 @@ import graph_architecture from "../../Assets/Projects/graph_architecture.png";
 import aws from "../../Assets/Projects/aws_service.png";
 import Medicare from "../../Assets/Projects/Medicare.png";
 import cyber from "../../Assets/databreaches.png";
+import Explainrecords from "../../Assets/Explainrecords.png";
 
 function Projects() {
   return (
