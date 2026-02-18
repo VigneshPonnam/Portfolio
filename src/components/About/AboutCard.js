@@ -8,40 +8,51 @@ function AboutCard() {
       <Card.Body>
         <blockquote className="blockquote mb-0">
           <p style={{ textAlign: "justify" }}>
-            Hi everyone! I’m <span className="purple">Soumyajit Behera</span>{" "}
-            from <span className="purple">Bhubaneswar, India</span>.
+            Hi everyone! I’m <span className="purple">Vignesh Ponnam</span>{" "}
+            currently based in <span className="purple">Albany, New York</span>.
             <br />
-            I’m currently working as a{" "}
-            <span className="purple">Software Developer</span> at{" "}
-            <span className="purple">Juspay</span>.
-            <br />I hold an Integrated M.Sc. (IMSc) in{" "}
-            <span className="purple">Mathematics and Computing</span> from{" "}
-            <span className="purple">BIT Mesra</span>.
+            I’m pursuing a{" "}
+            <span className="purple">Master’s in Computer Science</span> at{" "}
+            <span className="purple">University at Albany (SUNY)</span>.
+            <br />
+            Previously, I worked as an{" "}
+            <span className="purple">AI/ML Research Intern</span> at{" "}
+            <span className="purple">AsterTech LLC</span>, where I contributed to
+            building intelligent, data-driven systems and scalable ML workflows.
+            I also served as a{" "}
+            <span className="purple">Student Assistant</span> at UAlbany,
+            supporting academic operations and collaboration within the department.
             <br />
             <br />
-            Outside of coding, I love engaging in activities that keep me
-            creative and inspired:
+            My experience spans across{" "}
+            <span className="purple">AI/ML development</span>,{" "}
+            <span className="purple">LLM-based applications</span>,{" "}
+            <span className="purple">cloud architectures</span>, and{" "}
+            <span className="purple">full-stack software engineering</span>.
+            I’m passionate about engineering intelligent systems that translate
+            complex data into impactful real-world solutions.
           </p>
-
+    
           <ul>
             <li className="about-activity">
-              <ImPointRight /> Playing Games 🎮
+              <ImPointRight /> Building AI/ML Systems 🚀
             </li>
             <li className="about-activity">
-              <ImPointRight /> Writing Tech Blogs ✍️
+              <ImPointRight /> Exploring Cloud & Scalable Architectures ☁️
             </li>
             <li className="about-activity">
-              <ImPointRight /> Traveling and Exploring New Places 🌍
+              <ImPointRight /> Researching Intelligent Automation 🧠
             </li>
           </ul>
-
+    
           <p style={{ color: "rgb(155 126 172)" }}>
-            "Strive to build things that make a difference!"{" "}
+            "Designing technology that is intelligent, scalable, and impactful."
           </p>
-          <footer className="blockquote-footer">Soumyajit</footer>
+          <footer className="blockquote-footer">Vignesh</footer>
         </blockquote>
       </Card.Body>
     </Card>
+
   );
 }
 
