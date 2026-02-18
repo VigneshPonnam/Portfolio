@@ -2,12 +2,14 @@ import React from "react";
 import { Container, Row, Col } from "react-bootstrap";
 import ProjectCard from "./ProjectCards";
 import Particle from "../Particle";
-import agroassist from "../../Assets/Projects/recipe.png";
+import agroassist from "../../Assets/Projects/agrpasssist.png";
 import phishing from "../../Assets/Projects/phishing_detector.png";
 import vzoom from "../../Assets/Projects/zoomclone.png";
 import graphrag from "../../Assets/Projects/Graphrag.png";
 import recipe from "../../Assets/Projects/recipe.png";
 import graph_architecture from "../../Assets/Projects/graph_architecture.png";
+import aws from "../../Assets/Projects/aws_service.png";
+import Medicare from "../../Assets/Projects/Medicare.png";
 
 function Projects() {
   return (
@@ -32,7 +34,7 @@ function Projects() {
 
           <Col md={4} className="project-card">
             <ProjectCard
-              imgPath={graph_architecture}
+              imgPath={Explainrecords}
               isBlog={false}
               title="ExplainMyRecords (Medical Records Explain Chat – AI Healthcare Assistant)"
               description="Developed an AI-powered conversational system designed to interpret and simplify complex medical records into patient-friendly explanations. Implemented LLM-based contextual understanding with structured document parsing to extract diagnoses, lab results, prescriptions, and clinical notes. Built a secure backend pipeline for processing uploaded medical documents, enabling semantic retrieval and explainable responses while maintaining data privacy considerations. Focused on improving interpretability, accessibility, and user-centric healthcare communication through intelligent NLP-driven automation."
@@ -59,7 +61,7 @@ function Projects() {
 
           <Col md={4} className="project-card">
             <ProjectCard
-              imgPath={agroassist}
+              imgPath={aws}
               isBlog={false}
               title="AWS Data Visualization Pipeline"
               description="Designed a cloud-native analytics workflow leveraging AWS S3 for storage and Redshift for structured data warehousing. Implemented ETL pipelines and SQL-based transformations to process large-scale datasets. Developed visualization outputs to enable performance monitoring and business intelligence reporting."
@@ -68,7 +70,7 @@ function Projects() {
 
           <Col md={4} className="project-card">
             <ProjectCard
-              imgPath={agroassist}
+              imgPath={Medicare}
               isBlog={false}
               title="MediCare (Hospital Management System)"
               description="Developed a scalable hospital management system using ReactJS and Flask with Google CloudSQL backend integration. Implemented secure patient record handling, appointment scheduling modules, and role-based authentication mechanisms. Designed RESTful APIs for efficient data exchange and system scalability."
