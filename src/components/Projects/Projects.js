@@ -2,11 +2,11 @@ import React from "react";
 import { Container, Row, Col } from "react-bootstrap";
 import ProjectCard from "./ProjectCards";
 import Particle from "../Particle";
-import leaf from "../../Assets/Projects/leaf.png";
-import emotion from "../../Assets/Projects/emotion.png";
-import editor from "../../Assets/Projects/codeEditor.png";
-import chatify from "../../Assets/Projects/chatify.png";
-import suicide from "../../Assets/Projects/suicide.png";
+import agroassist from "../../Assets/Projects/recipe.png";
+import phishing from "../../Assets/Projects/phishing_detector.png";
+import vzoom from "../../Assets/Projects/zoomclone.png";
+import graphrag from "../../Assets/Projects/Graphrag.png";
+import recipe from "../../Assets/Projects/recipe.png";
 import bitsOfCode from "../../Assets/Projects/blog.png";
 
 function Projects() {
@@ -23,70 +23,72 @@ function Projects() {
         <Row style={{ justifyContent: "center", paddingBottom: "10px" }}>
           <Col md={4} className="project-card">
             <ProjectCard
-              imgPath={chatify}
+              imgPath={graphrag}
               isBlog={false}
-              title="Chatify"
-              description="Personal Chat Room or Workspace to share resources and hangout with friends build with react.js, Material-UI, and Firebase. Have features which allows user for realtime messaging, image sharing as well as supports reactions on messages."
-              ghLink="https://github.com/soumyajit4419/Chatify"
-              demoLink="https://chatify-49.web.app/"
+              title="GraphRAG (Explainable AI System)"
+              description="Designed and implemented a Knowledge Graph–enhanced Retrieval-Augmented Generation (RAG) architecture integrating Neo4j/Kuzu with LLMs to enable structured, context-aware information retrieval. Built graph-based entity-relationship schemas, implemented query routing pipelines, and optimized retrieval latency using modular data preprocessing and semantic embedding workflows. Focused on explainability through traceable response generation and metadata-linked outputs."
             />
           </Col>
 
           <Col md={4} className="project-card">
             <ProjectCard
-              imgPath={bitsOfCode}
+              imgPath={agroassist}
               isBlog={false}
-              title="Bits-0f-C0de"
-              description="My personal blog page build with Next.js and Tailwind Css which takes the content from makdown files and renders it using Next.js. Supports dark mode and easy to write blogs using markdown."
-              ghLink="https://github.com/soumyajit4419/Bits-0f-C0de"
-              demoLink="https://blogs.soumya-jit.tech/"
+              title="Agro-Assist (AI-Powered Agricultural Platform)"
+              description="Developed a full-stack AI-driven platform for crop prediction and decision support. Implemented machine learning models for yield estimation and disease classification using structured agricultural datasets. Integrated weather APIs, recommendation engines, and transactional modules for e-commerce and equipment rental. Built scalable backend services using Flask and deployed cloud-supported workflows."
             />
           </Col>
 
           <Col md={4} className="project-card">
             <ProjectCard
-              imgPath={editor}
+              imgPath={phishing}
               isBlog={false}
-              title="Editor.io"
-              description="Online code and markdown editor build with react.js. Online Editor which supports html, css, and js code with instant view of website. Online markdown editor for building README file which supports GFM, Custom Html tags with toolbar and instant preview.Both the editor supports auto save of work using Local Storage"
-              ghLink="https://github.com/soumyajit4419/Editor.io"
-              demoLink="https://editor.soumya-jit.tech/"              
+              title="Phishing Detector (Android + ML System)"
+              description="Engineered a URL-based phishing detection system using supervised machine learning models with feature extraction techniques (lexical and host-based attributes). Built a Flask-based API for model inference and integrated it with an Android front-end application for real-time detection. Performed model evaluation, accuracy tuning, and performance validation on labeled phishing datasets."              
             />
           </Col>
 
           <Col md={4} className="project-card">
             <ProjectCard
-              imgPath={leaf}
+              imgPath={agroassist}
               isBlog={false}
-              title="Plant AI"
-              description="Used the plant disease dataset from Kaggle and trained a image classifer model using 'PyTorch' framework using CNN and Transfer Learning with 38 classes of various plant leaves. The model was successfully able to detect diseased and healthy leaves of 14 unique plants. I was able to achieve an accuracy of 98% by using Resnet34 pretrained model."
-              ghLink="https://github.com/soumyajit4419/Plant_AI"
-              demoLink="https://plant49-ai.herokuapp.com/"
+              title="AWS Data Visualization Pipeline"
+              description="Designed a cloud-native analytics workflow leveraging AWS S3 for storage and Redshift for structured data warehousing. Implemented ETL pipelines and SQL-based transformations to process large-scale datasets. Developed visualization outputs to enable performance monitoring and business intelligence reporting."
             />
           </Col>
 
           <Col md={4} className="project-card">
             <ProjectCard
-              imgPath={suicide}
+              imgPath={agroassist}
               isBlog={false}
-              title="Ai For Social Good"
-              description="Using 'Natural Launguage Processing' for the detection of suicide-related posts and user's suicide ideation in cyberspace  and thus helping in sucide prevention."
-              ghLink="https://github.com/soumyajit4419/AI_For_Social_Good"
-              // demoLink="https://www.youtube.com/watch?v=dQw4w9WgXcQ&ab_channel=RickAstley" <--------Please include a demo link here
+              title="MediCare (Hospital Management System)"
+              description="Developed a scalable hospital management system using ReactJS and Flask with Google CloudSQL backend integration. Implemented secure patient record handling, appointment scheduling modules, and role-based authentication mechanisms. Designed RESTful APIs for efficient data exchange and system scalability."
             />
           </Col>
 
           <Col md={4} className="project-card">
             <ProjectCard
-              imgPath={emotion}
+              imgPath={vzoom}
               isBlog={false}
-              title="Face Recognition and Emotion Detection"
-              description="Trained a CNN classifier using 'FER-2013 dataset' with Keras and tensorflow backened. The classifier sucessfully predicted the various types of emotions of human. And the highest accuracy obtained with the model was 60.1%.
-              Then used Open-CV to detect the face in an image and then pass the face to the classifer to predict the emotion of a person."
-              ghLink="https://github.com/soumyajit4419/Face_And_Emotion_Detection"
-              // demoLink="https://blogs.soumya-jit.tech/"      <--------Please include a demo link here 
+              title="Meeting Scheduler (Secure Communication Platform)"
+              description="Built a secure video scheduling and communication system using ReactJS and WebRTC. Implemented visual cryptography principles to enhance confidentiality during digital communication workflows. Designed real-time signaling mechanisms and secure data exchange pipelines."
             />
           </Col>
+                
+          <Col md={4} className="project-card">
+            <ProjectCard
+              imgPath={recipe}
+              isBlog={false}
+              title="Recipe Search Application"
+              description="Developed a ReactJS-based application integrating third-party REST APIs for dynamic recipe search and nutritional data retrieval. Implemented responsive UI components and asynchronous API handling for real-time query responses." />
+          </Col>
+                
+          <Col md={4} className="project-card">
+            <ProjectCard
+              imgPath={recipe}
+              isBlog={false}
+              title="Cybersecurity – Threat Management (SOC Study & Simulation)"
+              description="Conducted structured analysis of Security Operations Center (SOC) workflows, including threat monitoring, incident detection, and response strategies. Studied network-level intrusion prevention systems, firewall configurations, and cloud security controls aligned with enterprise infrastructure protection." </Col>
         </Row>
       </Container>
     </Container>
