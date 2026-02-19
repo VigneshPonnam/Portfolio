@@ -4,8 +4,12 @@
 
 body {
   margin: 0;
-  font-family: "PT Mono", monospace !important;
+  /* font-family: "PT Mono", monospace !important; */
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   background-image: linear-gradient(to left, rgb(27 20 41), rgb(20 15 35));
+  font-family: 'Inter', sans-serif;
+  background-color: #000;
+  color: #ffffff;
+  letter-spacing: 0.3px;
 }
