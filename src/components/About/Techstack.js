@@ -5,7 +5,6 @@ import { Col, Row } from "react-bootstrap";
 import python from "../../Assets/TechIcons/python.svg";
 import pytorch from "../../Assets/TechIcons/pytorch.svg";
 import tensorflow from "../../Assets/TechIcons/tensorflow.svg";
-import huggingface from "../../Assets/TechIcons/huggingface.svg";
 import yolo from "../../Assets/TechIcons/yolo.svg";
 import mistralai from "../../Assets/TechIcons/mistralai.svg";
 import googlegemini from "../../Assets/TechIcons/googlegemini.svg";
@@ -22,7 +21,6 @@ import Typescript from "../../Assets/TechIcons/Typescript.svg";
 import Node from "../../Assets/TechIcons/Node.svg";
 import Git from "../../Assets/TechIcons/Git.svg";
 import github from "../../Assets/TechIcons/github.svg";
-import vscode from "../../Assets/TechIcons/vscode.svg";
 import Postman from "../../Assets/TechIcons/Postman.svg";
 import Docker from "../../Assets/TechIcons/Docker.svg";
 import SQL from "../../Assets/TechIcons/SQL.svg";
@@ -34,9 +32,7 @@ import gradio from "../../Assets/TechIcons/gradio.svg";
 import AWS from "../../Assets/TechIcons/AWS.svg";
 import googlecloud from "../../Assets/TechIcons/googlecloud.svg";
 import elasticcloud from "../../Assets/TechIcons/elasticcloud.svg";
-import Mongo from "../../Assets/TechIcons/Mongo.svg";
 import mongodb from "../../Assets/TechIcons/mongodb.svg";
-import neo4j from "../../Assets/TechIcons/neo4j.svg";
 
 // Cyber / Networking
 import cisco from "../../Assets/TechIcons/cisco.svg";

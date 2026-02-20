@@ -1,76 +1,73 @@
-<h2 align="center">
-  Portfolio Website - v2.0<br/>
-  <a href="https://soumyajit.vercel.app/" target="_blank">soumyajit.tech</a>
-</h2>
-<div align="center">
-  <img alt="Demo" src="./Images/readme-img1.png" />
-</div>
+🚀 Vignesh Ponnam – Portfolio Website
+<h2 align="center"> Portfolio Website – v2.0<br/> <a href="https://your-portfolio-link.com/" target="_blank"> your-portfolio-link.com </a> </h2> <div align="center"> <img alt="Portfolio Preview" src="./Images/readme-preview.png" /> </div> <br/> <center>
+📌 About
 
-<br/>
+This is my personal portfolio website showcasing:
 
-<center>
+Professional experience
 
-[![forthebadge](https://forthebadge.com/images/badges/built-with-love.svg)](https://forthebadge.com) &nbsp;
-[![forthebadge](https://forthebadge.com/images/badges/made-with-javascript.svg)](https://forthebadge.com) &nbsp;
-[![forthebadge](https://forthebadge.com/images/badges/open-source.svg)](https://forthebadge.com) &nbsp;
-![GitHub Repo stars](https://img.shields.io/github/stars/soumyajit4419/Portfolio?color=red&logo=github&style=for-the-badge) &nbsp;
-![GitHub forks](https://img.shields.io/github/forks/soumyajit4419/Portfolio?color=red&logo=github&style=for-the-badge)
+Technical projects
 
-</center>
+Knowledge Graph & RAG-based systems
 
-<h3 align="center">
-    🔹
-    <a href="https://github.com/soumyajit4419/Portfolio/issues">Report Bug</a> &nbsp; &nbsp;
-    🔹
-    <a href="https://github.com/soumyajit4419/Portfolio/issues">Request Feature</a>
-</h3>
+Software engineering capabilities
 
-## TL;DR
+Certifications and technical skills
 
-You can fork this repo to modify and make changes of your own. Please give me proper credit by linking back to [Soumyajit4419](https://github.com/soumyajit4419/Portfolio). Thanks!
+The website reflects my focus on scalable system design, backend engineering, cloud infrastructure, and intelligent data-driven applications.
 
-## Built With
+🛠 Built With
 
-My personal portfolio <a href="https://soumyajit.vercel.app/" target="_blank">soumyajit.tech</a> which features some of my github projects as well as my resume and technical skills.<br/>
+This project was developed using:
 
-This project was built using these technologies.
+React.js
 
-- React.js
-- Node.js
-- Express.js
-- CSS3
-- VsCode
-- Vercel
+React-Bootstrap
 
-## Features
+Node.js
 
-**📖 Multi-Page Layout**
+JavaScript (ES6+)
 
-**🎨 Styled with React-Bootstrap and Css with easy to customize colors**
+CSS3
 
-**📱 Fully Responsive**
+VS Code
 
-## Getting Started
+Vercel (Deployment)
 
-Clone down this repository. You will need `node.js` and `git` installed globally on your machine.
+✨ Features
 
-## 🛠 Installation and Setup Instructions
+📖 Multi-page layout (Home, About, Projects, Resume)
 
-1. Installation: `npm install`
+🎨 Elegant black & white glass theme
 
-2. In the project directory, you can run: `npm start`
+📱 Fully responsive design
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
-The page will reload if you make edits.
+🧠 Animated knowledge graph visuals
 
-## Usage Instructions
+🔗 Interactive project modal system
 
-Open the project folder and Navigate to `/src/components/`. <br/>
-You will find all the components used and you can edit your information accordingly.
+🧩 Structured experience & education sections
+
+⚡ Optimized performance and clean UI components
+
+🧠 Highlighted Work
+
+Some featured implementations in this portfolio include:
+
+Knowledge Graph–enhanced RAG architectures
+
+Secure document processing pipelines
+
+Full-stack system design projects
+
+Cloud-native data workflows
+
+AI-assisted healthcare and information systems
 
 ### Show your support
 
 Give a ⭐ if you like this website!
 
 <a href="https://www.buymeacoffee.com/soumyajit4419" target="_blank"><img src="https://cdn.buymeacoffee.com/buttons/v2/default-violet.png" alt="Buy Me A Coffee" height= "60px" width= "217px" ></a>
+
+</center>

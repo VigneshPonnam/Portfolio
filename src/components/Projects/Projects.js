@@ -2,12 +2,12 @@ import React from "react";
 import { Container, Row, Col } from "react-bootstrap";
 import ProjectCard from "./ProjectCards";
 import Particle from "../Particle";
+
 import agroassist from "../../Assets/Projects/agroassist.png";
 import phishing from "../../Assets/Projects/phishing_detector.png";
 import vzoom from "../../Assets/Projects/zoomclone.png";
 import graphrag from "../../Assets/Projects/Graphrag.png";
 import recipe from "../../Assets/Projects/recipe.png";
-import graph_architecture from "../../Assets/Projects/graph_architecture.png";
 import aws from "../../Assets/Projects/aws_service.png";
 import Medicare from "../../Assets/Projects/Medicare.png";
 import cyber from "../../Assets/databreaches.png";
@@ -19,91 +19,194 @@ function Projects() {
       <Particle />
       <Container>
         <h1 className="project-heading">
-          My Recent <strong className="purple">Works </strong>
+          My Recent <strong className="purple">Works</strong>
         </h1>
         <p style={{ color: "white" }}>
           Here are a few projects I've worked on recently.
         </p>
+
         <Row style={{ justifyContent: "center", paddingBottom: "10px" }}>
+
+          {/* GraphRAG */}
           <Col md={4} className="project-card">
             <ProjectCard
               imgPath={graphrag}
-              isBlog={false}
               title="GraphRAG (Explainable AI System)"
-              description="Designed and implemented a Knowledge Graph–enhanced Retrieval-Augmented Generation (RAG) architecture integrating Neo4j/Kuzu with LLMs to enable structured, context-aware information retrieval. Built graph-based entity-relationship schemas, implemented query routing pipelines, and optimized retrieval latency using modular data preprocessing and semantic embedding workflows. Focused on explainability through traceable response generation and metadata-linked outputs."
+              description={
+                <>
+                  <ul>
+                    <li>Designed Knowledge Graph–enhanced RAG architecture integrating graph DBs with LLMs.</li>
+                    <li>Implemented entity-relationship schemas for structured, context-aware querying.</li>
+                    <li>Built query routing + modular semantic embedding pipelines.</li>
+                    <li>Enabled explainable outputs with traceable metadata links.</li>
+                  </ul>
+
+                  <strong>Tech Stack:</strong> Neo4j / Kùzu, LLMs, Knowledge Graphs, Semantic Embeddings
+                </>
+              }
             />
           </Col>
 
+          {/* ExplainMyRecords */}
           <Col md={4} className="project-card">
             <ProjectCard
               imgPath={Explainrecords}
-              isBlog={false}
-              title="ExplainMyRecords (Medical Records Explain Chat – AI Healthcare Assistant)"
-              description="Developed an AI-powered conversational system designed to interpret and simplify complex medical records into patient-friendly explanations. Implemented LLM-based contextual understanding with structured document parsing to extract diagnoses, lab results, prescriptions, and clinical notes. Built a secure backend pipeline for processing uploaded medical documents, enabling semantic retrieval and explainable responses while maintaining data privacy considerations. Focused on improving interpretability, accessibility, and user-centric healthcare communication through intelligent NLP-driven automation."
+              title="ExplainMyRecords (AI Healthcare Assistant)"
+              description={
+                <>
+                  <ul>
+                    <li>Built conversational AI to simplify complex medical documents.</li>
+                    <li>Extracted diagnoses, lab results, prescriptions via structured parsing.</li>
+                    <li>Implemented secure document ingestion + semantic retrieval workflow.</li>
+                    <li>Focused on explainability and privacy-aware design.</li>
+                  </ul>
+
+                  <strong>Tech Stack:</strong> LLM-based NLP, Document Parsing, Semantic Retrieval, Backend Pipeline
+                </>
+              }
             />
           </Col>
 
+          {/* Agro Assist */}
           <Col md={4} className="project-card">
             <ProjectCard
               imgPath={agroassist}
-              isBlog={false}
-              title="Agro-Assist (AI-Powered Agricultural Platform)"
-              description="Developed a full-stack AI-driven platform for crop prediction and decision support. Implemented machine learning models for yield estimation and disease classification using structured agricultural datasets. Integrated weather APIs, recommendation engines, and transactional modules for e-commerce and equipment rental. Built scalable backend services using Flask and deployed cloud-supported workflows."
+              title="Agro-Assist (AI Agricultural Platform)"
+              description={
+                <>
+                  <ul>
+                    <li>Developed crop prediction + decision-support platform.</li>
+                    <li>Implemented ML models for yield estimation and disease classification.</li>
+                    <li>Integrated weather APIs + recommendation engines.</li>
+                    <li>Built scalable Flask backend with cloud-supported workflows.</li>
+                  </ul>
+
+                  <strong>Tech Stack:</strong> Python, Flask, ML Models, Weather APIs, Cloud Workflows
+                </>
+              }
             />
           </Col>
 
+          {/* Phishing Detector */}
           <Col md={4} className="project-card">
             <ProjectCard
               imgPath={phishing}
-              isBlog={false}
-              title="Phishing Detector (Android + ML System)"
-              description="Engineered a URL-based phishing detection system using supervised machine learning models with feature extraction techniques (lexical and host-based attributes). Built a Flask-based API for model inference and integrated it with an Android front-end application for real-time detection. Performed model evaluation, accuracy tuning, and performance validation on labeled phishing datasets."              
+              title="Phishing Detector (Android + ML)"
+              description={
+                <>
+                  <ul>
+                    <li>Engineered URL phishing classifier using lexical + host features.</li>
+                    <li>Built Flask API for inference and Android frontend integration.</li>
+                    <li>Performed accuracy tuning and model validation.</li>
+                    <li>Enabled real-time detection through REST architecture.</li>
+                  </ul>
+
+                  <strong>Tech Stack:</strong> Android, Flask, Supervised ML, Feature Engineering, REST APIs
+                </>
+              }
             />
           </Col>
 
+          {/* AWS Pipeline */}
           <Col md={4} className="project-card">
             <ProjectCard
               imgPath={aws}
-              isBlog={false}
               title="AWS Data Visualization Pipeline"
-              description="Designed a cloud-native analytics workflow leveraging AWS S3 for storage and Redshift for structured data warehousing. Implemented ETL pipelines and SQL-based transformations to process large-scale datasets. Developed visualization outputs to enable performance monitoring and business intelligence reporting."
+              description={
+                <>
+                  <ul>
+                    <li>Designed cloud-native analytics pipeline using S3 + Redshift.</li>
+                    <li>Implemented ETL + SQL transformation workflows.</li>
+                    <li>Processed large-scale datasets for BI reporting.</li>
+                    <li>Built structured monitoring and visualization outputs.</li>
+                  </ul>
+
+                  <strong>Tech Stack:</strong> AWS S3, Amazon Redshift, ETL, SQL, Data Visualization
+                </>
+              }
             />
           </Col>
 
+          {/* MediCare */}
           <Col md={4} className="project-card">
             <ProjectCard
               imgPath={Medicare}
-              isBlog={false}
               title="MediCare (Hospital Management System)"
-              description="Developed a scalable hospital management system using ReactJS and Flask with Google CloudSQL backend integration. Implemented secure patient record handling, appointment scheduling modules, and role-based authentication mechanisms. Designed RESTful APIs for efficient data exchange and system scalability."
+              description={
+                <>
+                  <ul>
+                    <li>Developed secure patient record + appointment system.</li>
+                    <li>Implemented role-based authentication mechanisms.</li>
+                    <li>Built scalable REST APIs with Flask.</li>
+                    <li>Integrated Google CloudSQL for persistent storage.</li>
+                  </ul>
+
+                  <strong>Tech Stack:</strong> ReactJS, Flask, Google CloudSQL, REST APIs, RBAC
+                </>
+              }
             />
           </Col>
 
+          {/* Meeting Scheduler */}
           <Col md={4} className="project-card">
             <ProjectCard
               imgPath={vzoom}
-              isBlog={false}
               title="Meeting Scheduler (Secure Communication Platform)"
-              description="Built a secure video scheduling and communication system using ReactJS and WebRTC. Implemented visual cryptography principles to enhance confidentiality during digital communication workflows. Designed real-time signaling mechanisms and secure data exchange pipelines."
+              description={
+                <>
+                  <ul>
+                    <li>Built real-time scheduling + communication system using WebRTC.</li>
+                    <li>Implemented visual cryptography concepts for confidentiality.</li>
+                    <li>Designed signaling + secure data exchange workflows.</li>
+                    <li>Enabled real-time video communication infrastructure.</li>
+                  </ul>
+
+                  <strong>Tech Stack:</strong> ReactJS, WebRTC, Real-time Signaling, Visual Cryptography
+                </>
+              }
             />
           </Col>
-                
+
+          {/* Recipe App */}
           <Col md={4} className="project-card">
             <ProjectCard
               imgPath={recipe}
-              isBlog={false}
               title="Recipe Search Application"
-              description="Developed a ReactJS-based application integrating third-party REST APIs for dynamic recipe search and nutritional data retrieval. Implemented responsive UI components and asynchronous API handling for real-time query responses." />
+              description={
+                <>
+                  <ul>
+                    <li>Integrated third-party REST APIs for dynamic recipe search.</li>
+                    <li>Implemented async data fetching + responsive UI components.</li>
+                    <li>Enabled real-time nutrition and search results rendering.</li>
+                    <li>Designed scalable API consumption layer.</li>
+                  </ul>
+
+                  <strong>Tech Stack:</strong> ReactJS, REST APIs, Async Data Handling
+                </>
+              }
+            />
           </Col>
-                
+
+          {/* Cybersecurity */}
           <Col md={4} className="project-card">
             <ProjectCard
               imgPath={cyber}
-              isBlog={false}
-              title="Cybersecurity – Threat Management (SOC Study & Simulation)"
-              description="Conducted structured analysis of Security Operations Center (SOC) workflows, including threat monitoring, incident detection, and response strategies. Studied network-level intrusion prevention systems, firewall configurations, and cloud security controls aligned with enterprise infrastructure protection." 
-                />
-                </Col>
+              title="Cybersecurity – Threat Management (SOC Simulation)"
+              description={
+                <>
+                  <ul>
+                    <li>Analyzed SOC workflows including detection and incident response.</li>
+                    <li>Studied IDS/IPS, firewall configuration, and cloud security controls.</li>
+                    <li>Mapped threat-handling strategies to enterprise infrastructure.</li>
+                    <li>Simulated monitoring and response scenarios.</li>
+                  </ul>
+
+                  <strong>Tech Stack:</strong> SOC Concepts, IDS/IPS, Firewall Concepts, Cloud Security Controls
+                </>
+              }
+            />
+          </Col>
+
         </Row>
       </Container>
     </Container>

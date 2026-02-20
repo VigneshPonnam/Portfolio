@@ -9,6 +9,7 @@ import {
   AiFillGithub,
 } from "react-icons/ai";
 import { FaLinkedinIn } from "react-icons/fa";
+import { MdEmail } from "react-icons/md";
 
 function Home() {
   return (
@@ -74,6 +75,14 @@ function Home() {
                   className="icon-colour  home-social-icons"
                 >
                   <FaLinkedinIn />
+                </a>
+              </li>
+              <li className="social-icons">
+                <a
+                  href="mailto:vagnishavignesh@gmail.com"
+                  className="icon-colour home-social-icons"
+                >
+                  <MdEmail />
                 </a>
               </li>
             </ul>
