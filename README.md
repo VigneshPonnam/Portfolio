@@ -1,6 +1,6 @@
 🚀 Vignesh Ponnam – Portfolio Website
-<h2 align="center"> Portfolio Website – v2.0<br/> <a href="[https://your-portfolio-link.com/](https://vigneshponnam-port.vercel.app/)" target="_blank">https://vigneshponnam-port.vercel.app/</a> </h2> <div align="center"> <img alt="Portfolio Preview" src="./readme-preview.png" /> </div> <br/> <center>
-📌 About
+<h2 align="center"> Portfolio Website<br/> <a href="https://vigneshponnam-port.vercel.app/" target="_blank">https://vigneshponnam-port.vercel.app/</a> </h2> <div align="center"> <img alt="Portfolio Preview" src="./readme-preview.png" /> </div> <br/> <center>
+<h2>📌 About</h2>
 
 This is my personal portfolio website showcasing:
 
@@ -16,7 +16,7 @@ Certifications and technical skills
 
 The website reflects my focus on scalable system design, backend engineering, cloud infrastructure, and intelligent data-driven applications.
 
-🛠 Built With
+<h2>🛠 Built With </h2>
 
 This project was developed using:
 
@@ -34,7 +34,7 @@ VS Code
 
 Vercel (Deployment)
 
-✨ Features
+<h2>✨ Features </h2>
 
 📖 Multi-page layout (Home, About, Projects, Resume)
 
@@ -50,7 +50,7 @@ Vercel (Deployment)
 
 ⚡ Optimized performance and clean UI components
 
-🧠 Highlighted Work
+<h2>🧠 Highlighted Work</h2>
 
 Some featured implementations in this portfolio include:
 
@@ -67,7 +67,4 @@ AI-assisted healthcare and information systems
 ### Show your support
 
 Give a ⭐ if you like this website!
-
-<a href="https://www.buymeacoffee.com/soumyajit4419" target="_blank"><img src="https://cdn.buymeacoffee.com/buttons/v2/default-violet.png" alt="Buy Me A Coffee" height= "60px" width= "217px" ></a>
-
 </center>
